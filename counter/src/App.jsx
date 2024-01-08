@@ -8,8 +8,23 @@ function App() {
   // let counter=5;
 
   function addValue(){
-    counter++;
-    setCounter(counter)
+    // setCounter((counter)=>{
+    //   return counter=counter+1
+    // })
+    // setCounter((counter)=>{
+    //   return counter=counter+1
+    // })
+    // setCounter((counter)=>{
+    //   return counter=counter+1
+    // })
+    // setCounter((counter)=>{
+    //   return counter=counter+1
+    // })
+    setCounter(counter+1)
+    // setCounter(counter+1)
+    // setCounter(counter+1)
+    // setCounter(counter+1)
+
     console.log(counter);
   }
   function removeValue(){
