@@ -1,6 +1,4 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useState , useCallback} from 'react'
 import './App.css'
 
 function App() {
@@ -36,12 +34,11 @@ function App() {
   }
   return (
     <>
-      <h1>Akh dikhata hai </h1>
+      <h1>Counter</h1>
       <h3>Counter Value : {counter}</h3>
       <button onClick={addValue}>Add Value</button>
       <button onClick={removeValue}  disabled={counter === 0}>Remove value Value</button>
-      <p>Dekhte hai yaha value update hogi ke nhi {counter}</p>
-
+      <p>lets check the value: {counter}</p>
     </>
   )
 }
