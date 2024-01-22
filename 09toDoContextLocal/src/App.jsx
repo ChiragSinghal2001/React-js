@@ -7,13 +7,13 @@ import TodoItem from './components/Todoitem'
 function App() {
   const [todos, setTodos] = useState([])
 
-  const addTodo =(todo)=>{
-       setTodos((prev)=>[{id: Date.now(),...todo},...prev])
+  const addTodo =(msg)=>{
+       setTodos((prev)=>[{id: Date.now(),...msg},...prev])
   }
-  const updateTodo =(id,todo)=>{
+  const updateTodo =(id,msg)=>{
     
     setTodos((prev)=>prev.map((prevtodo)=>
-        prevtodo.id === id ? todo : prevtodo
+        prevtodo.id === id ? msg : prevtodo
     ))
 }
 const deleteTodo=(id)=>{
